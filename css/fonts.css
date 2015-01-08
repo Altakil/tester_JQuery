@@ -1,0 +1,8 @@
+@font-face {
+    font-family: PTSans;
+    src: url("../fonts/PTSans.eot");
+    src: local('☺'),
+    url("../fonts/PTSans.ttf") format("truetype"),
+    url('../fonts/PTSans.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTSans.woff') format('woff');
+}

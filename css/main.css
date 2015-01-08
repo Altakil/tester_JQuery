@@ -1,0 +1,124 @@
+@import "table-clear.css";
+@import "fonts.css";
+
+.clear {
+    clear: both;
+}
+
+body {
+    background-color: #e4e4e4;
+    font: 14px PTSans;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.update {
+    color: #2f3b45;
+    float: right;
+    text-decoration: none;
+}
+
+.header h1 {
+    width: 330px;
+    font: 20px PTSans;
+    margin: 0 auto 20px auto;
+    color: darkslateblue;
+}
+
+.menu {
+    width: 100%;
+    background: #2f3b45;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.menu ul {
+    overflow: hidden;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: #becbd6;
+    padding: 15px 20px;
+}
+
+.menu a.active {
+    background: #494f55;
+}
+
+.testing {
+    margin-top: 20px;
+    border-radius: 4px;
+    width: 40%;
+    padding: 20px 10px;
+    background: #fff;
+    position: absolute;
+}
+
+.questions h2 {
+    margin-bottom: 10px;
+}
+
+.questions input[type=checkbox] {
+    position: relative;
+    top: 2px;
+}
+
+#getList {
+    margin: 8px 0;
+}
+
+.next, #enter-user {
+    display: block;
+    margin-top: 10px;
+}
+
+.empty-message {
+    color: red;
+}
+
+.formed-answers {
+    margin: 10px 0;
+}
+
+.answers-list li {
+    padding: 5px 10px;
+    overflow: hidden;
+    border: 1px solid grey;
+}
+
+.title-answer {
+    width: 80%;
+    float: left;
+}
+
+.custom {
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+.answer-valid {
+    background: url("../img/valid.png");
+    background-size: 100% 100%;
+}
+
+.answer-invalid {
+    background: url("../img/invalid.png");
+    background-size: 100% 100%;
+}

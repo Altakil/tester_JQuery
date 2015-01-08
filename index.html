@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test on mathematics</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <script src="javascript/jquery-1.7.min.js"></script>
+    <script src="javascript/javascript.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <h1>Проверка знаний на математику</h1>
+        <a href="" class="update">Обновить пройти тест заново</a>
+    </header>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="">Проверка</a>
+            </li>
+            <li>
+                <a href="" class="active">Установка</a>
+            </li>
+        </ul>
+    </div>
+    <section class="testing" id="set-test">
+        <div class="questions">
+            <h2>Выберите типы вопросов</h2>
+            <label for="add">сложение</label>
+            <input type="checkbox" name="plus" id="add">
+            <label for="subtraction">вычитание</label>
+            <input type="checkbox" name="sub" id="subtraction">
+            <label for="multiplication">умножение</label>
+            <input type="checkbox" name="multiply" id="multiplication">
+            <label for="division">деление</label>
+            <input type="checkbox" name="div" id="division">
+            <button id="getList">Получить список вопросов</button>
+            <output class="output">Вопрос №</output>
+            <input name="enter" id="enter-user">
+            <button class="next">Следующий</button>
+        </div>
+    </section>
+    <section class="testing" id="check-test">
+        <h2>Проверка ответов</h2>
+        <button class="formed-answers">Смотреть</button>
+        <output class="display-answers"></output>
+    </section>
+</div>
+</body>
+</html>
