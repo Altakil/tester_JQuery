@@ -38,6 +38,7 @@ body {
     background: #2f3b45;
     border-radius: 4px;
     overflow: hidden;
+    behavior: url(pie/PIE.htc);
 }
 
 .menu ul {
@@ -68,6 +69,7 @@ body {
     padding: 20px 10px;
     background: #fff;
     position: absolute;
+    behavior: url(pie/PIE.htc);
 }
 
 .questions h2 {
@@ -115,10 +117,8 @@ body {
 
 .answer-valid {
     background: url("../img/valid.png");
-    background-size: 100% 100%;
 }
 
 .answer-invalid {
     background: url("../img/invalid.png");
-    background-size: 100% 100%;
 }

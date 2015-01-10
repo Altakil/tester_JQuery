@@ -107,6 +107,15 @@ jQuery(document).ready(function () {
 
             this.outputQuestions = function (elementOutput) {
                 var valueAnswer = $('#enter-user').val();
+
+                function change(self) {
+                    this.changeText = function () {
+                        elementOutput.text(self.formedString(currentQuestion));
+                    };
+                }
+
+                var change = new change(this);
+
                 if (currentQuestion == countQuestions - 1) {
                     this.endTest = true;
                     $('.end').remove();
@@ -119,8 +128,8 @@ jQuery(document).ready(function () {
                         userAnswer[currentQuestion] = valueAnswer;
                         setTimeout(function (self) {
                             if (currentQuestion == 12) return;
-                            elementOutput.text(self.formedString(currentQuestion));
-                        }, 400, this);
+                            change.changeText();
+                        }, 400);
                         currentQuestion++;
                         elementOutput.fadeOut(400).fadeIn(400);
 
